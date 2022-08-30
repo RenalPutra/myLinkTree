@@ -12,6 +12,9 @@
     <title>LinkTree ala ala</title>
   </head>
   <body>
+    <audio id="rocky" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
     <div class="container animate__animated animate__zoomIn">
       <div class="profile">
         <img
@@ -22,6 +25,9 @@
         <h3 class="animate__animated animate__bounceInDown">
           Raenald Syaputra
         </h3>
+        <p class="animate__animated animate__bounceInDown">
+          click profile picture to play music
+        </p>
       </div>
       <div class="link">
         <a
@@ -59,5 +65,12 @@
         <div>made with 💝 form putra_syaputra</div>
       </div>
     </div>
+    <script>
+      const music = document.querySelector("#rocky");
+      const profile = document.querySelector(".profile");
+      profile.addEventListener("click", () => {
+        music.play();
+      });
+    </script>
   </body>
 </html>
