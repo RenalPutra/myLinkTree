@@ -32,6 +32,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile > img {
@@ -46,6 +49,10 @@ body {
   letter-spacing: 3px;
   margin-top: 20px;
   text-align: center;
+}
+
+.profile > p {
+  color: white;
 }
 
 .link {
